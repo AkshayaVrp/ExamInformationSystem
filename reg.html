@@ -1,0 +1,24 @@
+<html>
+<body>
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+<section id="loginBox">
+	<h2>REGISTER</h2>
+	<form method="post" class="minimal">
+		<label for="username">
+			Username:
+			<input type="text" name="username" id="username" placeholder="Username must have 8 and 20 characters" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+		</label>
+		<label for="password">
+			Password:
+			<input type="password" name="password" id="password" placeholder="Password must have 1 uppercase, lowercase and number" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+		</label>
+		<label for="mailid">
+			Email id
+			<input type="email" name="email" id="email" placeholder="email must have @ .com/.edu/.in etc" pattern="?=^(a-z0-9._%+-).@(a-z0-9.-).\.(a-z){2,4}$" required="required" />
+		</label>
+		<button type="submit" class="btn-minimal">Sign in</button>
+	</form>
+</section>
+</body>
+</html>	
+			
